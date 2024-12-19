@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+	--text-color: #11161e;
+	--3d-primary-color: #151a32;
+	--comon-colot: #fff;
+	--1st-primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--2nd-primary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+  }
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--font-family);
+}
+.lh-0{
+    line-height: 0;
+}
+/* common css ends*/
+
+
+/* NAVBAR LG STARTS HERE*/
+#navbarLG li a {
+    margin: 0 22.5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--text-color);
+    padding: 0;
+    position: relative;
+}
+#navbarLG li a:hover,
+#navbarLG li a.active{
+    color:var(--1st-primary-color);
+}
+#navbarLG li a span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(0 deg);
+    transition: 0.3s;
+    
+}
+#navbarLG li a:hover span{
+    transform:translateY(-50%) rotate(-180deg);
+
+}
+
+#navbarLG li  .submenu{
+    position: absolute;
+    border: 1px solid #aaa;
+    margin-top: 80px;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#navbarLG li{
+    position: relative;
+}
+#navbarLG li:hover .submenu{
+    margin-top: 10;
+    opacity: 1;
+    visibility: visible;
+}
+#navbarLG li .submenu a {
+    display: block;
+    border-bottom: 1px solid #aaa;
+    margin: 0;
+    padding: 10px 30px;
+}
+
+.quickLinks a{
+    color: var(--3d-primary-color);
+    margin: 0 10px;
+    position: relative;
+}
+.quickLinks a .counter{
+    position: absolute;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--comon-colot);
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    top: -12px;
+    right: -4px;
+}
+
+/* NAVBAR LG ENDS HERE*/
